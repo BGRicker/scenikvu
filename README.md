@@ -25,10 +25,7 @@
 
 
 - Homework
-  - Devise user accounts
-  - Integrate twitter bootstrap
   - Finish up creating a post
-  - Simple_form integration
   - User show pages for posts
   - flesh out what static page looks like, categories
 
