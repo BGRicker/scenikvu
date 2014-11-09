@@ -4,9 +4,15 @@
 <h1>Test</h1>
 <br><br>
 <div>
-<%= link_to 'Make a New Post!', new_admin_category_post %>
-<!-- <%= link_to 'Make a New Category!', new_admin_category_path %> -->
-</div><br><br><br>
+<% Category.all.each do |t| %>
+
+        <div class="col-sm-2 cat col-xs-offset-1">
+          <p>Make a new post for <%= link_to "#{t.name}", new_admin_category_post_path(t) %></p> <br />
+        </div>
+
+  <!--<%= link_to "Make a New Post for #{t.name}!", new_admin_category_post_path(t) %>
+<% end %>
+</div><br><br><br>-->
 
 
 

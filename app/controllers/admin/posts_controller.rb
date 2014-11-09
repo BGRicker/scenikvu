@@ -9,15 +9,15 @@ class Admin::PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new
-    Post.create(post_params)
+    @category = Category.find_by_slug(params[:category_id])
+    @category.posts.create(post_params)
     redirect_to root_path
   end
 
   private
 
   def post_params
-    params.require(:post).permit(:title, :description, :content, :category_ids => [])
+    params.require(:post).permit(:title, :description, :content)
   end
 
 end

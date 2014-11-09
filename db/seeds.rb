@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Category.find_or_create_by(:name => "music")
-Category.find_or_create_by(:name => "fashion")
-Category.find_or_create_by(:name => "cars")
-Category.find_or_create_by(:name => "art")
+Category.find_or_create_by(:name => "music", :slug => "music")
+Category.find_or_create_by(:name => "fashion", :slug => "fashion")
+Category.find_or_create_by(:name => "cars", :slug => "cars")
+Category.find_or_create_by(:name => "art", :slug => "art")

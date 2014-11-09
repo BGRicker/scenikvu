@@ -1,8 +1,8 @@
 <h1> create new </h1>
-<%= simple_form_for @post do |f| %>
+<%= simple_form_for @post, :url =>admin_category_posts_path do |f| %>
 <%= f.input :title %>
 <%= f.input :description %>
-<%= f.button :content %>
+<%= f.input :content %>
   <br>
   <%= f.submit 'Create', :class => 'btn btn-primary' %>
 <% end %>

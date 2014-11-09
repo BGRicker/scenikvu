@@ -25,7 +25,6 @@
 
 
 - Homework
-  - Finish up creating a post
   - User show pages for posts
   - flesh out what static page looks like, categories
 
