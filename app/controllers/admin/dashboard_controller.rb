@@ -1,13 +1,9 @@
 class Admin::DashboardController < ApplicationController
 
 	def show
-		@questions = Question.all
-		@question = Question.new
+		@posts = Post.all
+		@post = Post.new
 
-		@interviews = Interview.all
-		@interview = Interview.new
-
-		@topics = Topic.all
 		@users = User.all
 	end
 
