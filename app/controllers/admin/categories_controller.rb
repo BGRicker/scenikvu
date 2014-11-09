@@ -13,6 +13,10 @@ class Admin::CategoriesController < ApplicationController
     redirect_to root_path
   end
 
+  def current_category
+    @current_category ||= Category.find(params[:id])
+  end
+
   private
 
   def category_params

@@ -11,4 +11,8 @@ class Category < ActiveRecord::Base
     self.slug
   end
 
+  def current_category
+    @current_category ||= Category.find(params[:id])
+  end
+
 end
