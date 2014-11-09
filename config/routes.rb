@@ -14,6 +14,10 @@ Scenikvu::Application.routes.draw do
     resource :users, :only => :show
   end
 
+  #namespace :categories do
+    resources :posts, :only => [:index, :show]
+  #end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
