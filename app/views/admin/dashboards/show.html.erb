@@ -1,0 +1,11 @@
+<% @categories.each do |category| %>
+  <%= category.name %>
+<% end %><br><br><br>
+
+
+<% Category.all.each do |t| %>
+
+        <div class="col-sm-2 cat col-xs-offset-1">
+          <p>Make a new post for <%= link_to "#{t.name}", new_admin_category_post_path(t) %></p> <br />
+        </div>
+<% end %>

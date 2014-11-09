@@ -1,0 +1,23 @@
+<!-- Modal -->
+<div class="modal fade" id="interviewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Add new interview</h4>
+      </div>
+      <div class="modal-body row">
+        <%= simple_form_for @post, :url => admin_category_post_path do |f| %>
+        <%= f.input :title %>
+        <%= f.input :description %>
+        <%= f.input :content %>
+	   </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <%= f.submit 'Add', :class => 'btn btn-danger' %>
+	         <% end %>
+      </div>
+    </div>
+  </div>
+</div>

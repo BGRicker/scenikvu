@@ -10,6 +10,8 @@ Scenikvu::Application.routes.draw do
     resources :categories do
       resources :posts
     end
+    resource :dashboard, :only => :show
+    resource :users, :only => :show
   end
 
   # Example of regular route:
