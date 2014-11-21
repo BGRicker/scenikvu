@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<% if flash[:alert].present? %>
+<div class="alert alert-danger" role="alert"><%= flash[:alert] %></div>
+<% end %>
+
 <%= yield %>
 
 </body>

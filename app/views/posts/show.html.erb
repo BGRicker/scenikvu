@@ -1,6 +1,7 @@
 
 <div>
-<h1><%= @post.title %> </h1>
+<h1><%= @post.title.titleize %> </h1>
+<h2><%= link_to @post.category.name.titleize, category_posts_path(@post.category) %></h2>
 <%= @post.description %><br></center>
 <br>
 <p><%= @post.content %></p><br>

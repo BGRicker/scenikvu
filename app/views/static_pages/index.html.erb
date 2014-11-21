@@ -17,4 +17,15 @@
 
 <br><br>
 <%= link_to "Admin Dashboard", admin_dashboard_path %>
+
+<br><br><br>
+
+<% Category.all.each do |t| %>
+
+
+  <h3>View <%= link_to "#{t.name}", category_posts_path(t) %> posts</h3>
+  <p><%= "#{t.name}" %></p> <br />
+
+<% end %>
+
 <%= link_to "View Posts", posts_path %>
